@@ -10,7 +10,8 @@ export const ORG_INFO = {
 	nip: "8961541184",
 	regon: "360614482",
 	address: "Agrestowa 9, Nadolice Wielkie, 55-003 Czernica, Polska",
-	legalForm: "STOWARZYSZENIE",
+	legalForm: "Stowarzyszenie Rejestrowe",
+	bankAccount: "10 1600 1462 1814 9754 4000 0001",
 	registrationDate: "21 stycznia 2015 r.",
 	board: {
 		president: "Maciej Pakulski",

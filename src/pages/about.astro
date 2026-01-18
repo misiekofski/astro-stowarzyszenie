@@ -66,7 +66,8 @@ import { SITE_TITLE, ORG_INFO } from '../consts';
 						</div>
 						<div class="detail-row">
 							<span class="detail-label">KRS:</span>
-							<span class="detail-value">{ORG_INFO.krs}</span>
+							<span class="detail-value"><a href="https://rejestr.io/krs/540080/stowarzyszenie-nadolice-wielkie" target="_blank">
+							{ORG_INFO.krs}</a></span>
 						</div>
 						<div class="detail-row">
 							<span class="detail-label">NIP:</span>
@@ -79,6 +80,10 @@ import { SITE_TITLE, ORG_INFO } from '../consts';
 						<div class="detail-row">
 							<span class="detail-label">Adres siedziby:</span>
 							<span class="detail-value">{ORG_INFO.address}</span>
+						</div>
+						<div class="detail-row">
+							<span class="detail-label">Numer konta:</span>
+							<span class="detail-value">{ORG_INFO.bankAccount}</span>
 						</div>
 					</div>
 
@@ -172,7 +177,7 @@ import { SITE_TITLE, ORG_INFO } from '../consts';
 	}
 	.detail-label {
 		font-weight: 600;
-		min-width: 150px;
+		min-width: 200px;
 		color: rgb(var(--gray-dark));
 	}
 	.detail-value {
