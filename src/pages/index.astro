@@ -15,7 +15,8 @@ import { SITE_TITLE, SITE_DESCRIPTION, ORG_INFO } from '../consts';
 		<main>
 			<section class="hero">
 				<img src="/stowarzyszenie-logo.png" alt="Logo Stowarzyszenia Nadolice Wielkie" class="hero-logo" />
-				<h1>Witamy w Stowarzyszeniu Nadolice Wielkie</h1>
+				<h1>Witamy na stronie <br />
+				Stowarzyszenia Nadolice Wielkie</h1>
 				<p class="subtitle">Działamy na rzecz rozwoju wsi Nadolice Wielkie</p>
 			</section>
 
@@ -28,39 +29,12 @@ import { SITE_TITLE, SITE_DESCRIPTION, ORG_INFO } from '../consts';
 				</p>
 			</section>
 
-			<section class="info-cards">
-				<div class="card">
-					<h3>Dane rejestrowe</h3>
-					<ul>
-						<li><strong>KRS:</strong> <a href="https://rejestr.io/krs/540080/stowarzyszenie-nadolice-wielkie" target="_blank">{ORG_INFO.krs} </a></li>
-						<li><strong>NIP:</strong> {ORG_INFO.nip}</li>
-						<li><strong>REGON:</strong> {ORG_INFO.regon}</li>
-						<li><strong>Data rejestracji:</strong> {ORG_INFO.registrationDate}</li>
-					</ul>
-				</div>
-
-				<div class="card">
-					<h3>Siedziba</h3>
-					<p>{ORG_INFO.address}</p>
-				</div>
-
-				<div class="card">
-					<h3>Dokumenty</h3>
-					<p>
-						<a href="#" class="download-link">Pobierz statut stowarzyszenia (wkrótce)</a>
-					</p>
-				</div>
-			</section>
-
 			<section class="cta-section">
-				<h2>Dołącz do nas</h2>
-				<p>
-					Zapraszamy do współpracy i udziału w naszych inicjatywach. 
-					Śledź nasze aktualności na Facebooku!
-				</p>
+				<h2>Skontaktuj się z nami</h2>
 				<a href={ORG_INFO.socialMedia.facebook} target="_blank" class="cta-button">
 					Odwiedź nas na Facebooku
 				</a>
+
 			</section>
 		</main>
 		<Footer />
@@ -165,11 +139,22 @@ import { SITE_TITLE, SITE_DESCRIPTION, ORG_INFO } from '../consts';
 		border-radius: 5px;
 		font-weight: 600;
 		transition: transform 0.2s, box-shadow 0.2s;
+		margin: 0.4em;
+	}
+	.cta-button-secondary {
+		background: transparent;
+		color: #18489F;
+		box-shadow: inset 0 0 0 2px #18489F;
 	}
 	.cta-button:hover {
 		transform: translateY(-2px);
 		box-shadow: 0 4px 12px rgba(24, 72, 159, 0.3);
 		background: #24B783;
+	}
+	.cta-button-secondary:hover {
+		background: #24B783;
+		color: white;
+		box-shadow: 0 4px 12px rgba(24, 72, 159, 0.3);
 	}
 	@media (max-width: 720px) {
 		.hero h1 {
